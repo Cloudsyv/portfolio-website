@@ -1,4 +1,4 @@
-var db = false;
+/*var db = false;
 var healthValue = 100;
 const music = new Audio("SoundEffects/spotifydown.com - Man Of The Year.mp3");
 music.volume = 1/2;
@@ -6,6 +6,7 @@ music.volume = 1/2;
 function delay(seconds) {
     return new Promise(resolve => setTimeout(resolve, seconds*1000));
 }
+
 
 /*document.getElementById("TestB").addEventListener("click", async function(){
     if (db){
@@ -23,7 +24,7 @@ function delay(seconds) {
     document.getElementById("H1").textContent = "Health: "+healthValue; //("HEALTH: "+healthValue);
     //await delay(3);
     //alert("POOP");
-});*/
+});
 
 var totalClicks = 0;
 
@@ -42,4 +43,4 @@ for (var i = 0; i < buttons.length; i++){
     buttons[i].addEventListener("mouseout", function(){
         this.style.backgroundColor = "rgb(100,100,100)";
     })
-}
+}*/

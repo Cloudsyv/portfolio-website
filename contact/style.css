@@ -1,0 +1,126 @@
+* {
+    font-family: "Inclusive Sans", sans-serif;
+    color: white;
+    font-size: 17px;
+}
+
+body {
+    background-color: rgb(20,20,20);
+    margin: 0;
+}
+
+.card {
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 20px;
+    border: 1px solid rgb(50,50,50);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/*Navigation stuff*/
+
+.navBar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 0px;
+    position: relative;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.navBar #Author {
+    margin-left: 5rem;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navBar #socialLinks {
+    display: flex;
+    margin-left: auto;
+    margin-right: 5rem;
+    justify-content: flex-end;
+    gap: .5rem;
+}
+
+.navBar #socialLinks a {
+    margin: 0;
+}
+
+.navBar #socialLinks a .card{
+    padding: 10px;
+    margin: 0;
+    line-height: 0;
+    transition: transform .1s ease;
+}
+
+.navBar #socialLinks a .card:hover{
+
+    background-color: rgb(40,40,40);
+    transform: scale(1.1);
+}
+
+.mainMenu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Center the menu items */
+    padding: 0;
+    margin: 0;
+    position: absolute; /* Absolutely position the menu */
+    left: 50%; /* Start positioning from the middle of the screen */
+    transform: translateX(-50%); /* Shift it back by 50% of its width to center it */
+}
+
+.mainMenu a {
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    transition: transform .1s ease;
+    /*transition: color .1s ease;*/
+}
+
+.mainMenu a:hover{
+    color: rgb(200,200,200);
+    transform: scale(1.1);
+}
+
+.mainMenu a.activePage {
+    color: rgb(170,170,170);
+}
+/*Content*/
+.card{
+    max-width: 40rem;
+}
+
+.card #author {
+    font-size: 2.25rem;
+    margin: 0;
+    margin-bottom: .1rem;
+    /*line-height: 2.5rem;*/
+}
+.card #location {
+    display: flex;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.card #location i{
+    transform: scale(1.2);
+    color: rgb(170,170,170);
+}
+
+.card #location #cityState{
+    padding-left: 1rem;
+    transform: scale(1.2);
+    color: rgb(170, 170, 170);
+}
+
+/*.card #location #cityState{
+    font-size: 1.5rem;
+}*/
