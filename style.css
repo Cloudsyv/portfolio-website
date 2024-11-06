@@ -1,0 +1,40 @@
+#Title{
+    color: rgb(255,255,255);
+    padding: 20px 20px;
+    position: fixed;
+    right: 50%;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: .5px;
+
+    /*width: 100px;*/
+}
+
+#TestB{
+    color: rgb(255,255,255);
+    background-color: rgb(100,100,100);
+    padding: 30px 30px;
+    position: fixed;
+    right: 42.5%;
+    top: 44%;
+    width: 15%;
+    height: 12%;
+
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 15px;
+
+    border: none;
+    border-color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+body {
+    background-color: rgb(230,230,220);
+}
+
+/*button {
+    color: blue;
+}*/
