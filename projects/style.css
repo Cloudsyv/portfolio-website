@@ -91,36 +91,7 @@ body {
 
 .mainMenu a.activePage {
     color: rgb(170,170,170);
+    transform: scale(1.1);
 }
+
 /*Content*/
-.card{
-    max-width: 40rem;
-}
-
-.card #author {
-    font-size: 2.25rem;
-    margin: 0;
-    margin-bottom: .1rem;
-    /*line-height: 2.5rem;*/
-}
-.card #location {
-    display: flex;
-    margin-right: auto;
-    margin-bottom: 1rem;
-    align-items: center;
-}
-
-.card #location i{
-    transform: scale(1.2);
-    color: rgb(170,170,170);
-}
-
-.card #location #cityState{
-    padding-left: 1rem;
-    transform: scale(1.2);
-    color: rgb(170, 170, 170);
-}
-
-/*.card #location #cityState{
-    font-size: 1.5rem;
-}*/
