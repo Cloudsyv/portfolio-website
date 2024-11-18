@@ -1,3 +1,5 @@
+/*Default*/
+
 * {
     font-family: "Inclusive Sans", sans-serif;
     color: white;
@@ -7,6 +9,7 @@
 body {
     background-color: rgb(20,20,20);
     margin: 0;
+    overflow-y: scroll;
 }
 
 .card {
@@ -19,6 +22,10 @@ body {
     border-radius: 10px;
     margin-bottom: 20px;
     color: white;
+}
+
+.title{
+    font-size: 2.25rem;
 }
 
 /*Navigation stuff*/
@@ -34,10 +41,9 @@ body {
     margin-bottom: 3rem;
 }
 
-.navBar #Author {
+.navBar #author {
     margin-left: 5rem;
     font-size: 20px;
-    font-weight: bold;
 }
 
 .navBar #socialLinks {
@@ -48,9 +54,9 @@ body {
     gap: .5rem;
 }
 
-.navBar #socialLinks a {
+/* .navBar #socialLinks a {
     margin: 0;
-}
+} */
 
 .navBar #socialLinks a .card{
     padding: 10px;
@@ -60,7 +66,6 @@ body {
 }
 
 .navBar #socialLinks a .card:hover{
-
     background-color: rgb(40,40,40);
     transform: scale(1.1);
 }
@@ -68,12 +73,12 @@ body {
 .mainMenu {
     list-style-type: none;
     display: flex;
-    justify-content: center; /* Center the menu items */
+    justify-content: center;
     padding: 0;
     margin: 0;
-    position: absolute; /* Absolutely position the menu */
-    left: 50%; /* Start positioning from the middle of the screen */
-    transform: translateX(-50%); /* Shift it back by 50% of its width to center it */
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
 }
 
 .mainMenu a {
@@ -81,7 +86,6 @@ body {
     display: block;
     padding: 1rem;
     transition: transform .1s ease;
-    /*transition: color .1s ease;*/
 }
 
 .mainMenu a:hover{
@@ -93,5 +97,3 @@ body {
     color: rgb(170,170,170);
     transform: scale(1.1);
 }
-
-/*Content*/
