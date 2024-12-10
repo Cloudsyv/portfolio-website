@@ -1,276 +1,297 @@
 /*Default*/
 
 * {
-    font-family: "Inclusive Sans", sans-serif;
-    color: white;
-    font-size: 17px;
+  font-family: "Inclusive Sans", sans-serif;
+  color: white;
+  font-size: 17px;
 }
 
 body {
-    background-color: rgb(20,20,20);
-    margin: 0;
-    overflow-y: scroll;
+  background-color: rgb(20, 20, 20);
+  margin: 0;
+  overflow-y: scroll;
 }
 
 .card {
-    max-width: 50rem;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
 
-    padding: 20px;
-    border: 1px solid rgb(50,50,50);
-    border-radius: 10px;
-    margin-bottom: 20px;
-    color: white;
+  padding: 20px;
+  border: 1px solid rgb(50, 50, 50);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: white;
 }
 
-.title{
-    font-size: 2.25rem;
+.title {
+  font-size: 2.25rem;
 }
 
 /*Navigation stuff*/
 
 .navBar {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0px 0px;
-    position: relative;
-    width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 0px;
+  position: relative;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 .navBar #author {
-    margin-left: 5rem;
-    font-size: 20px;
+  margin-left: 5rem;
+  font-size: 20px;
 }
 
 .navBar #socialLinks {
-    display: flex;
-    margin-left: auto;
-    margin-right: 5rem;
-    justify-content: flex-end;
-    gap: .5rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: 5rem;
+  justify-content: flex-end;
+  gap: 0.5rem;
 }
 
 /* .navBar #socialLinks a {
     margin: 0;
 } */
 
-.navBar #socialLinks a .card{
-    padding: 10px;
-    margin: 0;
-    line-height: 0;
-    transition: transform .1s ease;
+.navBar #socialLinks a .card {
+  padding: 10px;
+  margin: 0;
+  line-height: 0;
+  transition: transform 0.1s ease;
 }
 
-.navBar #socialLinks a .card:hover{
-    background-color: rgb(40,40,40);
-    transform: scale(1.1);
+.navBar #socialLinks a .card:hover {
+  background-color: rgb(40, 40, 40);
+  transform: scale(1.1);
 }
 
 .mainMenu {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    left: 50%; 
-    transform: translateX(-50%);
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .mainMenu a {
-    text-decoration: none;
-    display: block;
-    padding: 1rem;
-    transition: transform .1s ease;
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+  transition: transform 0.1s ease;
 }
 
-.mainMenu a:hover{
-    color: rgb(200,200,200);
-    transform: scale(1.1);
+.mainMenu a:hover {
+  color: rgb(200, 200, 200);
+  transform: scale(1.1);
 }
 
 .mainMenu a.activePage {
-    color: rgb(170,170,170);
-    transform: scale(1.1);
+  color: rgb(170, 170, 170);
+  transform: scale(1.1);
 }
 
 /*First card*/
 
-.card{
-    max-width: 40rem;
+.card {
+  max-width: 40rem;
 }
 
 .card #author {
-    font-size: 2.25rem;
-    margin: 0;
-    margin-bottom: .1rem;
+  font-size: 2.25rem;
+  margin: 0;
+  margin-bottom: 0.1rem;
 }
 
 .card #location {
-    display: flex;
-    margin-right: auto;
-    margin-bottom: 1rem;
-    align-items: center;
+  display: flex;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  align-items: center;
 }
 
-.card #location i{
-    transform: scale(1.2);
-    color: rgb(170,170,170);
+.card #location i {
+  transform: scale(1.2);
+  color: rgb(170, 170, 170);
 }
 
-.card #location #cityState{
-    padding-left: 1rem;
-    transform: scale(1.2);
-    color: rgb(170, 170, 170);
+.card #location #cityState {
+  padding-left: 1rem;
+  transform: scale(1.2);
+  color: rgb(170, 170, 170);
 }
 
 /*Programming languages part*/
 
-#languagesDisplay{
-    max-width: 40rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4rem;
+#languagesDisplay {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
 }
 
-.slideContainer{
-    display: flex;
-    overflow: hidden;
-    width: 33rem;
-    margin-left: auto;
-    margin-right: auto;
-    transform: scale(1.3);
+.slideContainer {
+  display: flex;
+  overflow: hidden;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 110%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /* transform: scale(); */
+  /* margin-bottom: 1rem; */
+  mask-image: linear-gradient(
+    to left,
+    transparent 0%,
+    #000 20%,
+    #000 50%,
+    #000 80%,
+    transparent 100%
+  );
 }
 
-.slideDiv{
-    gap: 1rem;
-    padding-right: 1rem;
-    display: flex;
-    animation: slide 15s linear infinite;
-    animation-play-state: running;
+.slideDiv {
+  gap: 1.5rem;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  animation: slide 20s linear infinite;
+  animation-play-state: running;
+}
+.slideDiv i {
+  transform: scale(2);
 }
 
-.slideContainer:hover .slideDiv{
-    animation-play-state: paused;
+.icon {
+  fill: white; /* Change the color to white */
+  width: 50px; /* Optional: Set size */
+  height: 50px;
+}
+
+.slideContainer:hover .slideDiv {
+  animation-play-state: paused;
 }
 
 /* Define keyframes */
 @keyframes slide {
-    0% {
-        transform: translateX(0); 
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 /*Projects*/
-#projects{
-    max-width: 40rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4rem;
+#projects {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
 }
 
-#projects .cardPannel{
-    /*Card stuff*/
-    max-width: 50rem;
-    margin-left: auto;
-    margin-right: auto;
+#projects .cardPannel {
+  /*Card stuff*/
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
 
-    padding: 20px;
-    border: 1px solid rgb(50,50,50);
-    border-radius: 10px;
-    margin-bottom: 20px;
-    color: white;
+  padding: 20px;
+  border: 1px solid rgb(50, 50, 50);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: white;
 
-    /*Pannel stuff*/
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-    position: relative;
-    padding: 0px;
-    min-height: 25rem;
-    max-height: 25rem;
-    box-shadow: 0 -20px 80px -20px #ffffff1f inset;
+  /*Pannel stuff*/
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+  padding: 0px;
+  min-height: 25rem;
+  max-height: 25rem;
+  box-shadow: 0 -20px 80px -20px #ffffff1f inset;
 }
 
-.projectImage{
-    position: absolute;
-    object-fit: cover;
-    object-position: center;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
+.projectImage {
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
 
-    mask-image: linear-gradient(to top,transparent 10%,#000 100%);
-    mask-size: 100% 100%; 
-    transition: all .35s ease;
+  mask-image: linear-gradient(to top, transparent 10%, #000 100%);
+  mask-size: 100% 100%;
+  transition: all 0.35s ease;
 }
 
-.projectImage:hover{
-    transform: scale(1.1);
-    mask-size: 100% 110%;
+.projectImage:hover {
+  transform: scale(1.1);
+  mask-size: 100% 110%;
 }
 
 .overlay {
-    z-index: 2;
-    pointer-events: none;
+  z-index: 2;
+  pointer-events: none;
 
-    position: absolute;
-    width: auto;
-    height: fit-content;
-    padding: 5% 35% 5% 5%;
-    bottom: 0;
-    margin-top: auto;
+  position: absolute;
+  width: auto;
+  height: fit-content;
+  padding: 5% 35% 5% 5%;
+  bottom: 0;
+  margin-top: auto;
 
-    transition: all .35s ease;
+  transition: all 0.35s ease;
 }
 
-.projectImage:hover + *{
-    bottom: 5%;
+.projectImage:hover + * {
+  bottom: 5%;
 }
 
-.projectTitle{
-    color: rgb(200,200,200);
-    /*font-size: 1.2rem;*/
+.projectTitle {
+  color: rgb(200, 200, 200);
+  /*font-size: 1.2rem;*/
 }
-.projectDescription{
-    color: rgb(180,180,180);
-}
-
-.projectLanguages{
-    display: flex;
-    gap: 1%;
-    list-style-type: none;
+.projectDescription {
+  color: rgb(180, 180, 180);
 }
 
-.projectLanguages .card{
-    padding: 8px;
-    margin: 0px;
-    margin-bottom: 2%;
+.projectLanguages {
+  display: flex;
+  gap: 1%;
+  list-style-type: none;
 }
 
+.projectLanguages .card {
+  padding: 8px;
+  margin: 0px;
+  margin-bottom: 2%;
+}
 
 /*Footer*/
-footer{
-    margin-bottom: 2rem;
+footer {
+  margin-bottom: 2rem;
 }
 hr.footSeperator {
-    background-color: black;
-    color: black;
-    border-color: black;
-    max-width: 40rem;
-    margin-top: 5rem;
-    margin-bottom: 2rem;
+  background-color: black;
+  color: black;
+  border-color: black;
+  max-width: 40rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 }
 
-#Author{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+#Author {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
 }
