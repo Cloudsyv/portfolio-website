@@ -1,21 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Izaiah Coleman">
-        <title>Izaiah Coleman</title>
-        <link rel="icon" type="image/png" href="/logo1.png">
-        <link rel="stylesheet" href="style.css"/>
-        <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&effect=3d-float">-->
-        <link rel="stylesheet" href="https://fonts.google.com/specimen/Jersey+10?categoryFilters=Appearance:%2FTheme%2FPixel">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Jersey+10&family=New+Amsterdam&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/e43ef73e25.js" crossorigin="anonymous"></script>
-    </head>
-    
-    <body>
-        
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Izaiah Coleman" />
+    <title>Izaiah Coleman</title>
+    <link rel="icon" type="image/png" href="/logo1.png" />
+    <link rel="stylesheet" href="style.css" />
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&effect=3d-float">-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Jersey+10?categoryFilters=Appearance:%2FTheme%2FPixel"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Jersey+10&family=New+Amsterdam&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e43ef73e25.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="navBar">
+      <h1 id="author">Izaiah Coleman</h1>
+
+      <ul class="mainMenu">
+        <li><a href="/home/">Home</a></li>
+        <li><a class="activePage" href="/projects/">Projects</a></li>
+        <li><a href="/contact/">Contact me</a></li>
+      </ul>
+
+      <div id="socialLinks">
+        <a href="mailto:IzaiahColemanMain@gmail.com">
+          <div class="card">
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/izaiahcodes/">
+          <div class="card">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </a>
+        <a href="https://github.com/Cloudsyv">
+          <div class="card">
+            <i class="fa-brands fa-github"></i>
+          </div>
+        </a>
+      </div>
+    </nav>
+
+    <div class="content">
+      <img
+        class="projectImage"
+        src="/images/cardProject1.png"
+        alt="Template image"
+      />
+
+      <div class="card">
+        <div id="projectTitleLogo">
+          <img
+            id="projectLogo"
+            src="/images/cardProjectLogo.png"
+            width="50px"
+            height="50px"
+          />
+          <h1 id="projectTitle">Card Project</h1>
+        </div>
+
+        <div id="projectLanguages">
+          <div class="card">
+            <i class="fa-regular fa-moon"></i>
+            Lua
+          </div>
+        </div>
+
+        <div id="projectDescription">
+          A recreation of the game "Slay the spire" on Roblox.
+        </div>
+
+        <a href="https://www.roblox.com/games/14103758035/Card-Project-2">
+          <button class="playButton">Play</button>
+        </a>
+      </div>
+
+      <div class="information">
+        <h2>About</h2>
+        <p>
+          Card Project is a passion project where I attempted to recreate the
+          popular game "Slay the spire" in a 3D environment on Roblox. Majority
+          of the mechanics are influenced from my observations of "Slay the
+          spire" and "Arcane lineage".
+        </p>
+        <p>
+          Sound effects and icon images are directly taken from "Slay the
+          spire". Card art is made with the help of DALL-E.
+        </p>
+        <p>
+          The particular twist that I wanted to implement was to turn Slay the
+          spire into an MMO card game where you battle enemies with your
+          friends.
+        </p>
+
+        <h2>Features</h2>
+        <ul>
+          <li>Deck-Building based Gameplay</li>
+          <li>Party-System</li>
+          <li>Chance based encounters</li>
+          <li>MMO style progression</li>
+          <li>Complex card synergies</li>
+        </ul>
+
+        <h2>Demonstration</h2>
+        <video id="projectVideo" width="680" height="360" controls>
+          <source src="/videos/cardProject1.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <footer>
+        <hr class="footSeperator" />
+        <p id="Author">© 2024 Izaiah Coleman. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
 </html>

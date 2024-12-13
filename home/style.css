@@ -3,13 +3,21 @@
 * {
   font-family: "Inclusive Sans", sans-serif;
   color: white;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 body {
   background-color: rgb(20, 20, 20);
   margin: 0;
   overflow-y: scroll;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 30px;
 }
 
 .card {
@@ -24,12 +32,17 @@ body {
   color: white;
 }
 
-.title {
-  font-size: 2.25rem;
+.content {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#title {
+  margin: 0;
 }
 
 /*Navigation stuff*/
-
 .navBar {
   display: flex;
   justify-content: flex-start;
@@ -86,6 +99,7 @@ body {
   display: block;
   padding: 1rem;
   transition: transform 0.1s ease;
+  font-size: 17px;
 }
 
 .mainMenu a:hover {
@@ -94,7 +108,7 @@ body {
 }
 
 .mainMenu a.activePage {
-  color: rgb(170, 170, 170);
+  color: rgb(156 163 175);
   transform: scale(1.1);
 }
 
@@ -119,13 +133,13 @@ body {
 
 .card #location i {
   transform: scale(1.2);
-  color: rgb(170, 170, 170);
+  color: rgb(156 163 175);
 }
 
 .card #location #cityState {
   padding-left: 1rem;
   transform: scale(1.2);
-  color: rgb(170, 170, 170);
+  color: rgb(156 163 175);
 }
 
 /*Programming languages part*/
@@ -262,7 +276,7 @@ body {
   /*font-size: 1.2rem;*/
 }
 .projectDescription {
-  color: rgb(180, 180, 180);
+  color: rgb(156 163 175);
 }
 
 .projectLanguages {
