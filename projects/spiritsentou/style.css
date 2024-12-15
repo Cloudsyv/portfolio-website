@@ -1,5 +1,4 @@
 /*Default*/
-
 * {
   font-family: "Inclusive Sans", sans-serif;
   color: white;
@@ -12,21 +11,16 @@ body {
   overflow-y: scroll;
 }
 
-video {
-  display: block;
-  margin: 0 auto;
+a {
+  text-decoration: none;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 150%;
 }
 
 img {
-  max-width: 40rem;
-}
-
-a {
-  text-decoration: none;
+  max-width: 100%;
 }
 
 .card {
@@ -41,12 +35,17 @@ a {
   color: white;
 }
 
-.title {
-  font-size: 2.25rem;
+.content {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#title {
+  margin: 0;
 }
 
 /*Navigation stuff*/
-
 .navBar {
   display: flex;
   justify-content: flex-start;
@@ -60,7 +59,7 @@ a {
 
 .navBar #author {
   margin-left: 5rem;
-  font-size: 20px;
+  font-size: 150%;
 }
 
 .navBar #socialLinks {
@@ -70,10 +69,6 @@ a {
   justify-content: flex-end;
   gap: 0.5rem;
 }
-
-/* .navBar #socialLinks a {
-    margin: 0;
-} */
 
 .navBar #socialLinks a .card {
   padding: 10px;
@@ -103,7 +98,7 @@ a {
   display: block;
   padding: 1rem;
   transition: transform 0.1s ease;
-  font-size: 17px;
+  font-size: 100%;
 }
 
 .mainMenu a:hover {
@@ -114,6 +109,25 @@ a {
 .mainMenu a.activePage {
   color: rgb(156 163 175);
   transform: scale(1.1);
+}
+
+/*Footer*/
+footer {
+  margin-bottom: 2rem;
+}
+hr.footSeperator {
+  background-color: black;
+  color: black;
+  border-color: black;
+  max-width: 40rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+#Author {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 75%;
 }
 
 /*Info*/
@@ -148,7 +162,7 @@ a {
 }
 
 .card #projectTitleLogo #projectTitle {
-  font-size: xx-large;
+  font-size: 200%;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -177,7 +191,7 @@ a {
 .playButton {
   font-family: "Inclusive Sans", sans-serif;
   color: black;
-  font-size: 22px;
+  font-size: 100%;
   padding: 0.25rem 0.75rem 0.25rem 0.75rem;
   border-radius: 10px;
   border-style: hidden;
@@ -196,20 +210,52 @@ a {
   margin-right: auto;
 }
 
-/*Footer*/
-footer {
-  margin-bottom: 2rem;
-}
-hr.footSeperator {
-  background-color: black;
-  color: black;
-  border-color: black;
-  margin-top: 5rem;
-  margin-bottom: 2rem;
+/*Tablets*/
+@media (max-width: 1200px) {
+  * {
+    font-size: 17px;
+  }
 }
 
-#Author {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+@media (max-width: 1000px) {
+  * {
+    font-size: 15px;
+  }
+  /*Navigation adjustments*/
+  .navBar {
+    flex-direction: column;
+  }
+  .navBar #author {
+    margin: 0;
+  }
+  .navBar #socialLinks {
+    margin: 0;
+  }
+  .mainMenu {
+    left: 0%;
+    transform: translateX(0px);
+    position: relative;
+  }
+}
+
+/*Mobile*/
+@media (max-width: 480px) {
+  * {
+    font-size: 12px;
+  }
+  /*Navigation adjustments*/
+  .navBar {
+    flex-direction: column;
+  }
+  .navBar #author {
+    margin: 0;
+  }
+  .navBar #socialLinks {
+    margin: 0;
+  }
+  .mainMenu {
+    left: 0%;
+    transform: translateX(0px);
+    position: relative;
+  }
 }
