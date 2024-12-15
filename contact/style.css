@@ -1,5 +1,4 @@
 /*Default*/
-
 * {
   font-family: "Inclusive Sans", sans-serif;
   color: white;
@@ -13,12 +12,17 @@ body {
 }
 
 h2 {
-  font-size: 40px;
-  margin: 5px;
+  font-size: 150%;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
 }
 
 .card {
-  max-width: 40rem;
+  max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
 
@@ -27,6 +31,12 @@ h2 {
   border-radius: 10px;
   margin-bottom: 20px;
   color: white;
+}
+
+.content {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #title {
@@ -47,7 +57,7 @@ h2 {
 
 .navBar #author {
   margin-left: 5rem;
-  font-size: 20px;
+  font-size: 150%;
 }
 
 .navBar #socialLinks {
@@ -86,7 +96,7 @@ h2 {
   display: block;
   padding: 1rem;
   transition: transform 0.1s ease;
-  font-size: 17px;
+  font-size: 100%;
 }
 
 .mainMenu a:hover {
@@ -99,6 +109,25 @@ h2 {
   transform: scale(1.1);
 }
 
+/*Footer*/
+footer {
+  margin-bottom: 2rem;
+}
+hr.footSeperator {
+  background-color: black;
+  color: black;
+  border-color: black;
+  max-width: 40rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+#Author {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 75%;
+}
+
 /*Content*/
 .content {
   max-width: 50rem;
@@ -108,7 +137,7 @@ h2 {
 
 .Description {
   color: rgb(156 163 175);
-  font-size: 20px;
+  font-size: 100%;
 }
 
 .socialLinks {
@@ -144,7 +173,7 @@ h2 {
 }
 
 .Username {
-  font-size: 15px;
+  font-size: 75%;
   color: rgb(200, 200, 200);
   transition: transform 0.1s ease;
 }
@@ -153,20 +182,52 @@ h2 {
   color: rgb(156 163 175);
 }
 
-/*Footer*/
-footer {
-  margin-bottom: 2rem;
-}
-hr.footSeperator {
-  background-color: black;
-  color: black;
-  border-color: black;
-  margin-top: 5rem;
-  margin-bottom: 2rem;
+/*Tablets*/
+@media (max-width: 1200px) {
+  * {
+    font-size: 17px;
+  }
 }
 
-#Author {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+@media (max-width: 1000px) {
+  * {
+    font-size: 15px;
+  }
+  /*Navigation adjustments*/
+  .navBar {
+    flex-direction: column;
+  }
+  .navBar #author {
+    margin: 0;
+  }
+  .navBar #socialLinks {
+    margin: 0;
+  }
+  .mainMenu {
+    left: 0%;
+    transform: translateX(0px);
+    position: relative;
+  }
+}
+
+/*Mobile*/
+@media (max-width: 480px) {
+  * {
+    font-size: 12px;
+  }
+  /*Navigation adjustments*/
+  .navBar {
+    flex-direction: column;
+  }
+  .navBar #author {
+    margin: 0;
+  }
+  .navBar #socialLinks {
+    margin: 0;
+  }
+  .mainMenu {
+    left: 0%;
+    transform: translateX(0px);
+    position: relative;
+  }
 }
