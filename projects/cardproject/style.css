@@ -21,6 +21,10 @@ h2 {
   font-size: 30px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .card {
   max-width: 50rem;
   margin-left: auto;
@@ -99,7 +103,7 @@ h2 {
 }
 
 .mainMenu a:hover {
-  color: rgb(200, 200, 200);
+  color: rgb(212 212 212);
   transform: scale(1.1);
 }
 

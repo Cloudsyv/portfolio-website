@@ -99,7 +99,7 @@ h2 {
 }
 
 .mainMenu a:hover {
-  color: rgb(200, 200, 200);
+  color: rgb(212 212 212);
   transform: scale(1.1);
 }
 
@@ -170,7 +170,7 @@ h2 {
 }
 
 .projectTitle {
-  color: rgb(200, 200, 200);
+  color: rgb(212 212 212);
   /*font-size: 1.2rem;*/
 }
 .projectDescription {
